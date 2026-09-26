@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-michigan-code",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Michigan Compiled Laws — state statutes by citation.",
   "type": "module",
   "main": "src/index.ts",
@@ -26,7 +26,7 @@
     "@cloudflare/workers-types": "^4.20260405.1"
   },
   "pipeworx": {
-    "sourceHash": "v1-ac5b7bf8f9de661bc80c0b9a3e123020940261c1c68616d9ec4b6f28d25d7717",
-    "sourceCommit": "adb69d997f82a62e8e22b594488c7d04a227db35"
+    "sourceHash": "v1-9ba91726f25ea7b7fede943256dcec8a3d92bc5858949570a0970626cfaaab56",
+    "sourceCommit": "6182c4cfebddb94950e060b5d2fca18f18ad1aca"
   }
 }
