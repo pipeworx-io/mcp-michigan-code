@@ -1,0 +1,18 @@
+[
+  {
+    "name": "mi_compiled_law",
+    "description": "Get the FULL TEXT of a section of the Michigan Compiled Laws — Michigan state statutes — by citation. \"MCL 750.316\" is first degree murder. Returns the statutory text only: the catchline and body of the section. The History line (acts that enacted or amended it) and editorial notes are not included in the stored copy; the `text_scope` field says what a given answer contains. Keyless. Use for \"what does MCL 750.316 say\" or to check a Michigan statute a case relies on.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "section": {
+          "type": "string",
+          "description": "Section as cited, e.g. \"750.316\" or \"257.625\". Chapter is the part before the dot."
+        }
+      },
+      "required": [
+        "section"
+      ]
+    }
+  }
+]
