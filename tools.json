@@ -14,5 +14,41 @@
         "section"
       ]
     }
+  },
+  {
+    "name": "mi_admin_rule",
+    "description": "Get the FULL TEXT of a rule from the Michigan Administrative Code — agency rules that implement Michigan statutes (licensing, health, safety, and other department regulations), by citation like \"R 400.4142\". Different from mi_compiled_law, which serves only statutes (MCL). Currently indexes the rule sets listed in `rule_sets_covered` on a miss; a citation outside those is reported as not-yet-indexed, not as nonexistent. Example: \"R 400.4142\" is the Child Caring Institutions rule on health-service policies, including medication storage and dispensing. Keyless.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "citation": {
+          "type": "string",
+          "description": "Rule citation, e.g. \"R 400.4142\" or \"400.4142\". The part before the dot is the chapter."
+        }
+      },
+      "required": [
+        "citation"
+      ]
+    }
+  },
+  {
+    "name": "mi_admin_rule_search",
+    "description": "Full-text search over the Michigan Administrative Code rule sets this pack has indexed (see mi_admin_rule). Use for \"what Michigan rule covers X\" when the exact citation is unknown, e.g. {query: \"medication administration child caring institution\"}. Searches rule headings and body text; returns matching citations with a snippet. Keyless.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "query": {
+          "type": "string",
+          "description": "Words to search for, e.g. \"medication storage\" or \"staff-to-resident ratio\"."
+        },
+        "limit": {
+          "type": "number",
+          "description": "Max results (default 10, max 25)."
+        }
+      },
+      "required": [
+        "query"
+      ]
+    }
   }
 ]

@@ -2,8 +2,8 @@
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.github.pipeworx-io/michigan-code",
   "title": "Michigan Code",
-  "description": "Michigan Compiled Laws — state statutes by citation.",
-  "version": "0.2.0",
+  "description": "Michigan Compiled Laws (statutes) and, since fleet #3957, the Michigan Administrative Code (agency…",
+  "version": "0.2.1",
   "websiteUrl": "https://pipeworx.io/packs/michigan-code",
   "repository": {
     "url": "https://github.com/pipeworx-io/mcp-michigan-code",

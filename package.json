@@ -1,7 +1,7 @@
 {
   "name": "@pipeworx/mcp-michigan-code",
-  "version": "0.2.0",
-  "description": "Michigan Compiled Laws — state statutes by citation.",
+  "version": "0.2.1",
+  "description": "Michigan Compiled Laws (statutes) and, since fleet #3957, the Michigan Administrative Code (agency rules) — two different publications, two different storage shapes, sharing this pack the way washington-code shares RCW + WAC.",
   "type": "module",
   "main": "lib/index.js",
   "exports": {
@@ -27,7 +27,7 @@
     "mode": "gateway",
     "slug": "michigan-code",
     "gatewaySlug": "michigan-code",
-    "sourceHash": "v1-3feb3ad0c1cdc19af2c71fe472968d0349616a476c6dba0363f0b13bdaeef25e",
-    "sourceCommit": "5c89d6abb778d45da5d92002eb251978622bedf9"
+    "sourceHash": "v1-cb5b9ea34f48f98b5b6f55a0989d49954c073fe3154508b8028341842e28c012",
+    "sourceCommit": "56cf550e46fed96c0101a3877ccaf8357eecf016"
   }
 }
